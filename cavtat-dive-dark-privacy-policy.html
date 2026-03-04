@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Cavtat Dive Dark Chrome Extension</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0a0e1a;
+      --surface: #111827;
+      --border: rgba(90, 173, 255, 0.15);
+      --text: #c8d8ef;
+      --text-bright: #e8f0ff;
+      --accent: #5aadff;
+      --accent-dim: rgba(90, 173, 255, 0.12);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* header bar */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    header .icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #1a3a6a, #5aadff);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+
+    header .title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.15rem;
+      color: var(--text-bright);
+      letter-spacing: 0.01em;
+    }
+
+    /* main content */
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      color: var(--text-bright);
+      margin-bottom: 0.5rem;
+      line-height: 1.2;
+    }
+
+    .last-updated {
+      font-size: 0.85rem;
+      color: var(--accent);
+      margin-bottom: 2.5rem;
+      opacity: 0.8;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      color: var(--text-bright);
+      margin-top: 2.5rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    strong {
+      color: var(--text-bright);
+      font-weight: 500;
+    }
+
+    .highlight-box {
+      background: var(--accent-dim);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .highlight-box p {
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: rgba(200, 216, 239, 0.4);
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 2rem 1.25rem 3rem; }
+      header { padding: 1rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="icon">🤿</div>
+    <div class="title">Cavtat Dive Dark</div>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last updated: March 4, 2026</p>
+
+    <p>
+      This privacy policy describes how the <strong>Cavtat Dive Dark</strong> Chrome extension
+      ("the Extension") handles user data. We are committed to protecting your privacy and being
+      transparent about our practices.
+    </p>
+
+    <div class="highlight-box">
+      <p>
+        <strong>In short:</strong> The Extension does not collect, store, transmit, or share any
+        personal data with us or any third party. All data stays on your device.
+      </p>
+    </div>
+
+    <h2>What the Extension Does</h2>
+    <p>
+      Cavtat Dive Dark replaces your Chrome new tab page with a custom page that displays:
+    </p>
+    <ul>
+      <li>A background photograph of an underwater dive scene in Cavtat, Croatia</li>
+      <li>A large semi-transparent clock showing your current local time</li>
+      <li>Current weather conditions for your location and for Cavtat, Croatia</li>
+    </ul>
+
+    <h2>Data Collection</h2>
+    <p>
+      <strong>We do not collect any personal data.</strong> The Extension does not have a server,
+      database, or any backend infrastructure. No information is transmitted to us or to any
+      third party under our control.
+    </p>
+
+    <h2>Geolocation</h2>
+    <p>
+      To display local weather, the Extension requests your geographic coordinates through your
+      browser's built-in Geolocation API. This request is handled entirely by Chrome's standard
+      permission prompt — you can allow or deny it at any time.
+    </p>
+    <p>
+      If you grant location access:
+    </p>
+    <ul>
+      <li>Your coordinates are sent directly from your browser to the
+        <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> weather API
+        and to
+        <a href="https://nominatim.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap Nominatim</a>
+        to retrieve weather data and resolve your city name.</li>
+      <li>These requests go directly from your browser to these third-party APIs. Your coordinates
+        are <strong>never</strong> sent to us or stored anywhere.</li>
+      <li>No location history is kept. Each time you open a new tab, the Extension requests your
+        current location fresh.</li>
+    </ul>
+    <p>
+      If you deny location access, the Extension still works — it simply does not display local
+      weather, and only shows weather for Cavtat, Croatia.
+    </p>
+
+    <h2>Third-Party Services</h2>
+    <p>
+      The Extension communicates directly with the following third-party services from your browser:
+    </p>
+    <ul>
+      <li><strong>Open-Meteo</strong> (<a href="https://open-meteo.com/" target="_blank" rel="noopener">open-meteo.com</a>) — to fetch current weather data. See their <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">terms</a>.</li>
+      <li><strong>OpenStreetMap Nominatim</strong> (<a href="https://nominatim.openstreetmap.org/" target="_blank" rel="noopener">nominatim.openstreetmap.org</a>) — to resolve coordinates to a city name. See their <a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">privacy policy</a>.</li>
+      <li><strong>Google Fonts</strong> (<a href="https://fonts.google.com/" target="_blank" rel="noopener">fonts.google.com</a>) — to load the Inter typeface. See their <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">privacy policy</a>.</li>
+    </ul>
+    <p>
+      We have no control over and assume no responsibility for the privacy practices of these
+      third-party services. We encourage you to review their respective policies.
+    </p>
+
+    <h2>Data Storage</h2>
+    <p>
+      The Extension does not use cookies, local storage, Chrome storage APIs, or any other
+      persistence mechanism. No data is saved between sessions.
+    </p>
+
+    <h2>Data Sharing and Sales</h2>
+    <p>
+      We do not sell, trade, rent, or otherwise transfer any user data to any third party. We do
+      not use data for advertising, analytics, or tracking purposes.
+    </p>
+    <p>
+      The use of information received from Google APIs adheres to the
+      <a href="https://developer.chrome.com/docs/webstore/program-policies" target="_blank" rel="noopener">Chrome Web Store User Data Policy</a>,
+      including the Limited Use requirements.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+      The Extension does not knowingly collect any information from children under the age of 13.
+      Since the Extension collects no personal data at all, it is safe for users of all ages.
+    </p>
+
+    <h2>Changes to This Policy</h2>
+    <p>
+      We may update this privacy policy from time to time. Any changes will be reflected on this
+      page with an updated "Last updated" date. Continued use of the Extension after changes
+      constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      If you have any questions about this privacy policy or the Extension, please contact us at:
+    </p>
+    <p>
+      <a href="mailto:support@sexdrugsandcandles.com">support@sexdrugsandcandles.com</a>
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2026 Cavtat Dive Dark. All rights reserved.
+  </footer>
+
+</body>
+</html>
